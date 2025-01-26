@@ -1,5 +1,5 @@
 'use client'
-import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer } from 'recharts'
 import dynamic from 'next/dynamic'
 
 const features = [
@@ -24,7 +24,7 @@ const features = [
     icon: 'i-tabler-chart-bar',
     color: 'text-cyan-500',
   },
-];
+]
 
 const data = [
   { date: '1月', users: 400 },
@@ -33,7 +33,7 @@ const data = [
   { date: '4月', users: 1500 },
   { date: '5月', users: 2000 },
   { date: '6月', users: 2400 },
-];
+]
 
 const Chart = () => {
   return (
@@ -61,7 +61,7 @@ const Chart = () => {
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 bg-zinc-900 min-h-screen">
+    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <div className="flex flex-col items-center justify-center">
         <div className="py-6">
           <h1 className="text-3xl md:text-5xl font-extrabold mb-4 text-zinc-100">
@@ -106,9 +106,8 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-2 mb-4">
               {[...Array(10)].map((_, i) => (
                 <div
-
                   // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                                    key={i}
+                  key={i}
                   className="w-10 h-10 rounded-full bg-zinc-800 overflow-hidden ring-2 ring-zinc-700 hover:ring-orange-500 transition-all duration-300 flex items-center justify-center"
                 >
                   <i className="i-tabler-user text-xl text-zinc-400" />
@@ -117,10 +116,7 @@ export default function Home() {
             </div>
 
             <div className="flex justify-center">
-              <span
-
-                className="text-sm text-orange-500 hover:text-orange-400 transition-colors"
-              >
+              <span className="text-sm text-orange-500 hover:text-orange-400 transition-colors">
                 + 1.2k more waiting
               </span>
             </div>
@@ -147,5 +143,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }
